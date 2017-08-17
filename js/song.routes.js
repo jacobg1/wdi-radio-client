@@ -14,6 +14,12 @@ function Router ($stateProvider) {
       controllerAs: 'vm',
       templateUrl: 'js/ng-views/index.html'
     })
+    .state('songNew', {
+      url: '/songs/new',
+      controller: 'SongNewController',
+      controllerAs: 'vm',
+      templateUrl: 'js/ng-views/new.html'
+    })
     .state('songShow', {
       url: '/songs/:id',
       controller: 'SongShowController',
