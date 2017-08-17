@@ -1,3 +1,4 @@
 <h2>{{ vm.song.title }}</h2>
 <i>{{ vm.song.album }}</i>
 <img ng-src="{{ vm.song.preview_url }}" alt="{{ vm.song.title }}">
+<a ui-sref="songEdit({ id: vm.song.id })">Edit Song</a>
